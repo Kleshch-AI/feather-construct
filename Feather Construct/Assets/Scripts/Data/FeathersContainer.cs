@@ -13,10 +13,19 @@ namespace FeatherConstruct.Data
     }
 
     [System.Serializable]
-    public struct FeatherData
+    public class FeatherData
     {
-        public int Id;
-        [ToneName] public string ToneName;
+        [SerializeField] [ReadOnly] private string id;
+        [SerializeField] [ToneName] private int toneId;
+
+        public int ToneId => toneId;
+
+        public void SetupId(string newId) => id = newId;
+
+        public FeatherData(string id)
+        {
+            this.id = id;
+        }
     }
 
 

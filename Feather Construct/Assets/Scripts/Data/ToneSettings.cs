@@ -21,13 +21,21 @@ namespace FeatherConstruct.Data
             }
         }
 
+        public ToneData GetToneById(int id) =>  id >= 0 && id < Tones.Count ? Tones[id] : null;
+
     }
 
     [System.Serializable]
-    public struct ToneData
+    public class ToneData
     {
         public string Name;
         public Color Color;
+
+        public ToneData(string name, Color color)
+        {
+            Name = name;
+            Color = color;
+        }
     }
 
 }
