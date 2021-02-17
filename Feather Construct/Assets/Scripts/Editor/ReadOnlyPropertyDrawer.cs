@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEditor;
-using KleshchAI.Utils;
+using FeatherConstruct.Utils;
 
 namespace FeatherConstruct.EditorSettings
 {

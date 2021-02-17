@@ -13,15 +13,13 @@ MonoBehaviour:
   m_Name: FeathersContainer
   m_EditorClassIdentifier: 
   Feathers:
-  - Id: f.01
-    ToneId: 2
-  - Id: f.01
-    ToneId: 0
-  - Id: f.02
-    ToneId: 0
-  - Id: f.03
-    ToneId: 2
-  - Id: f.04
-    ToneId: 0
-  - Id: f.05
-    ToneId: 2
+  - id: f.00
+    toneId: 0
+  - id: f.01
+    toneId: 1
+  - id: f.02
+    toneId: 0
+  - id: f.03
+    toneId: 2
+  - id: f.04
+    toneId: 2

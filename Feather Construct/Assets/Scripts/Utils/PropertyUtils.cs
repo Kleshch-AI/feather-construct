@@ -1,7 +1,6 @@
 using UnityEditor;
-using UnityEngine;
 
-namespace KleshchAI.Utils
+namespace FeatherConstruct.Utils
 {
 
     public static class PropertyUtils
