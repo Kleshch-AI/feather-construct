@@ -609,6 +609,9 @@
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
         <HintPath>D:/dev/feather-construct/Feather Construct/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
+    <Reference Include="UniRx">
+        <HintPath>D:/dev/feather-construct/Feather Construct/Library/ScriptAssemblies/UniRx.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/dev/feather-construct/Feather Construct/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>

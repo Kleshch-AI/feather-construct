@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\Model\Construct.cs" />
      <Compile Include="Assets\Scripts\Model\GameManager.cs" />
      <Compile Include="Assets\Scripts\Model\IConstruct.cs" />
+     <Compile Include="Assets\Scripts\Model\IGameManager.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Scripts\Utils\PropertyUtils.cs" />
      <Compile Include="Assets\Scripts\Utils\TagUtils.cs" />
@@ -595,6 +596,9 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
         <HintPath>D:/dev/feather-construct/Feather Construct/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+    </Reference>
+    <Reference Include="UniRx">
+        <HintPath>D:/dev/feather-construct/Feather Construct/Library/ScriptAssemblies/UniRx.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:/dev/feather-construct/Feather Construct/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
