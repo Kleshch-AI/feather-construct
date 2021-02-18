@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using FeatherConstruct.Utils;
+using FeatherConstruct.Model;
 
 namespace FeatherConstruct.Controllers
 {
@@ -9,7 +10,13 @@ namespace FeatherConstruct.Controllers
 
         [SerializeField] private float speed = 2f;
 
+        private IConstruct construct;
         private bool flying = false;
+
+        private void Start()
+        {
+            construct = GameManager.Instance.Construct;
+        }
 
         private void Update()
         {
@@ -51,9 +58,17 @@ namespace FeatherConstruct.Controllers
             gameObject.transform.position += new Vector3(0, -speed, 0);
         }
 
-        private void OnTriggerEnter(Collider other) 
+        private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.CompareTag(TagUtils.Ground) && flying) flying = false;    
+            switch (other.tag)
+            {
+                case TagUtils.Ground:
+                    if (flying) flying = false;
+                    break;
+                case TagUtils.Feather:
+                    if (construct.TakeFeather()) Destroy(other.gameObject);
+                    break;
+            }
         }
 
     }
