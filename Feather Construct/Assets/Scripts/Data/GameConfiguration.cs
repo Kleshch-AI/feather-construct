@@ -9,6 +9,7 @@ namespace FeatherConstruct.Data
 
         [Header("GameParameters")]
         [SerializeField] private int maxFeathersCount;
+        [SerializeField] private int heightPerFeather;
 
         [Header("Feathers Container")]
         [SerializeField] private FeathersContainer feathersContainer;
@@ -18,6 +19,7 @@ namespace FeatherConstruct.Data
 
         public ToneSettings ToneSettings => toneSettings;
         public int MaxFeathersCount => maxFeathersCount;
+        public int HeightPerFeather => heightPerFeather;
 
     }
 

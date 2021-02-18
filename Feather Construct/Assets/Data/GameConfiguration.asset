@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: GameConfiguration
   m_EditorClassIdentifier: 
   maxFeathersCount: 4
+  heightPerFeather: 10
   feathersContainer: {fileID: 11400000, guid: 97a554ca1dd57e346aea5168a074f9f4, type: 2}
   toneSettings: {fileID: 11400000, guid: 81495376a0668824382071075b899bd1, type: 2}

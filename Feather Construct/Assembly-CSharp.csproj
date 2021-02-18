@@ -42,7 +42,6 @@
      <Compile Include="Assets\Scripts\Controllers\InitializationController.cs" />
      <Compile Include="Assets\Scripts\Data\FeathersContainer.cs" />
      <Compile Include="Assets\Scripts\Data\GameConfiguration.cs" />
-     <Compile Include="Assets\Scripts\Data\SingletonScriptableObject.cs" />
      <Compile Include="Assets\Scripts\Data\ToneSettings.cs" />
      <Compile Include="Assets\Scripts\Model\Construct.cs" />
      <Compile Include="Assets\Scripts\Model\GameManager.cs" />

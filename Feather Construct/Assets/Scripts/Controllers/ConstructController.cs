@@ -51,6 +51,15 @@ namespace FeatherConstruct.Controllers
         private void ProcessFlight(Vector2 factor)
         {
             gameObject.transform.position += new Vector3(factor.x * speed, factor.y * speed, 0);
+            CheckHeight();
+        }
+
+        private void CheckHeight()
+        {
+            var maxHeight = GameManager.Configuration.HeightPerFeather * construct.FeathersCount;
+            if (gameObject.transform.position.y < maxHeight) return;
+
+            gameObject.transform.position = new Vector3(gameObject.transform.position.x, maxHeight, 0);
         }
 
         private void ProcessLand()

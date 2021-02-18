@@ -7,10 +7,9 @@ namespace FeatherConstruct.Model
         private int feathersCount;
         private float height;
 
-        internal Construct()
-        {
+        int IConstruct.FeathersCount => feathersCount;
 
-        }
+        internal Construct() { }
 
         bool IConstruct.TakeFeather()
         {
