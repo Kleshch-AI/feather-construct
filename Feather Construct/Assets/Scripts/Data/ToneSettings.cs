@@ -15,7 +15,7 @@ namespace FeatherConstruct.Data
         {
             get
             {
-                foreach (var item in GameManager.Configuration.ToneSettings.Tones)
+                foreach (var item in GameManager.Instance.Configuration.ToneSettings.Tones)
                 {
                     yield return item.Name;
                 }

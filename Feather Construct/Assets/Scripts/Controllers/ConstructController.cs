@@ -56,7 +56,7 @@ namespace FeatherConstruct.Controllers
 
         private void CheckHeight()
         {
-            var maxHeight = GameManager.Configuration.HeightPerFeather * construct.FeathersCount;
+            var maxHeight = GameManager.Instance.Configuration.HeightPerFeather * construct.FeathersCount;
             if (gameObject.transform.position.y < maxHeight) return;
 
             gameObject.transform.position = new Vector3(gameObject.transform.position.x, maxHeight, 0);
@@ -76,6 +76,9 @@ namespace FeatherConstruct.Controllers
                     break;
                 case TagUtils.Feather:
                     if (construct.TakeFeather()) Destroy(other.gameObject);
+                    break;
+                case TagUtils.Top:
+                    GameManager.Instance.Win();
                     break;
             }
         }

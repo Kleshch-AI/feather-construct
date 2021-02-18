@@ -5,7 +5,6 @@ namespace FeatherConstruct.Model
     {
 
         private int feathersCount;
-        private float height;
 
         int IConstruct.FeathersCount => feathersCount;
 
@@ -21,7 +20,7 @@ namespace FeatherConstruct.Model
            else return false;
         }
 
-        private bool CanTakeFeather() => feathersCount < GameManager.Configuration.MaxFeathersCount;
+        private bool CanTakeFeather() => feathersCount < GameManager.Instance.Configuration.MaxFeathersCount;
 
     }
 

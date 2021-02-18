@@ -2,25 +2,32 @@ using FeatherConstruct.Data;
 
 namespace FeatherConstruct.Model
 {
-    
-    public class GameManager
+
+    public class GameManager : IGameManager
     {
 
         private static GameManager instance;
+        private static GameConfiguration configuration;
         private Construct construct;
-        
-        public static GameManager Instance => instance != null ? instance :
+
+        public static IGameManager Instance => instance != null ? instance :
             instance = new GameManager();
-        public static GameConfiguration Configuration;
-        public IConstruct Construct => construct;
+
+        GameConfiguration IGameManager.Configuration => configuration;
+        IConstruct IGameManager.Construct => construct;
 
         private GameManager() { }
 
-        public void Initialize(GameConfiguration gameConfiguration)
+        void IGameManager.Initialize(GameConfiguration gameConfiguration)
         {
-            Configuration = gameConfiguration;
+            configuration = gameConfiguration;
 
             construct = new Construct();
+        }
+
+        void IGameManager.Win()
+        {
+            UnityEngine.Debug.Log("!!! win !!!");
         }
 
     }
