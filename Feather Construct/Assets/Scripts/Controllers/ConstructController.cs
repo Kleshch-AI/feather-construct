@@ -20,6 +20,8 @@ namespace FeatherConstruct.Controllers
 
         private void Update()
         {
+            if (GameManager.Instance.IsEngame) return;
+
             if (Input.GetKey(KeyCode.Space))
             {
                 flying = true;
