@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e71c6fa1498fc459f8869c922df5f1, type: 3}
+  m_Name: GameConfiguration
+  m_EditorClassIdentifier: 
+  maxFeathersCount: 4
+  feathersContainer: {fileID: 11400000, guid: 97a554ca1dd57e346aea5168a074f9f4, type: 2}
+  toneSettings: {fileID: 11400000, guid: 81495376a0668824382071075b899bd1, type: 2}

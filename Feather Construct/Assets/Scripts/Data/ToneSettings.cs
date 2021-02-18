@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections.Generic;
+using FeatherConstruct.Model;
 
 namespace FeatherConstruct.Data
 {
 
     [CreateAssetMenu(fileName = "ToneSettings", menuName = "Feather Construct/Data/ToneSettings")]
-    public class ToneSettings : SingletonScriptableObject<ToneSettings>
+    public class ToneSettings : ScriptableObject
     {
 
         [SerializeField] public List<ToneData> Tones;
@@ -14,7 +15,7 @@ namespace FeatherConstruct.Data
         {
             get
             {
-                foreach (var item in Instance.Tones)
+                foreach (var item in GameManager.Configuration.ToneSettings.Tones)
                 {
                     yield return item.Name;
                 }
